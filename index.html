@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garfield Style Website</title>
+    <style>
+        body {
+            background-image: url('d7h42y1-52a15b21-3009-48fe-a96a-06aaf7fa50a7.png'); /* Replace 'path_to_your_image.jpg' with the URL of your Garfield image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        /* Other CSS styles specific to your content can be added here */
+        /* For example: */
+ 
+        h1 {
+            position: relative;
+            left: 930px;
+            top: 500px;
+            color: #796060;
+            font-size: 18px;
+        }
+
+        .copy-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .copy-btn:hover {
+            background-color: #FF6347;
+        }
+
+        .social-buttons {
+            position: relative;
+            left: 1000px;
+            top: 500px;
+        }
+
+        .social-buttons img {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>0xFfE37a8A8969e106FA60c78bF080FdEc2b5DE2A5
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button></h1>
+        
+    </div>
+    <div class="social-buttons">
+        <a href="https://twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter">
+        </a>
+        <a href="https://dex.com" target="_blank">
+            <img src="https://play.google.com/store/apps/details?id=com.dexscreener&hl=en_US " alt="DEXScreener">
+        </a>
+        <a href="https://telegram.org" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        </a>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const value = '0x123456789';
+            navigator.clipboard.writeText(value).then(() => {
+                alert('Copied to clipboard: ' + value);
+            }).catch(err => {
+                console.error('Error copying to clipboard: ', err);
+            });
+        }
+    </script>
+
+</body>
+</html>
