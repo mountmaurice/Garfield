@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garfield Style Website</title>
+    <style>
+        body {
+            background-image: url('d7h42y1-52a15b21-3009-48fe-a96a-06aaf7fa50a7.png'); /* Replace 'path_to_your_image.jpg' with the URL of your Garfield image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center top -70px; /* Adjust background position */
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            position: relative; /* Position relative to the viewport */
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 150px; /* Distance from the bottom */
+            right: 120px; /* Distance from the right */
+            color: #973903;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .copy-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #81500c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .copy-btn:hover {
+            background-color: #2b2221;
+        }
+
+        .social-buttons {
+            position: absolute;
+            bottom: 70px; /* Distance from the bottom */
+            right: 280px; /* Distance from the right */
+        }
+
+        .social-buttons a {
+            text-decoration: none; /* Remove blue underscore lines */
+        }
+
+        .social-buttons img {
+            height: 50px; /* Set the height */
+            width: auto; /* Maintain aspect ratio */
+            margin-left: 2px; /* Add left margin for spacing */
+            margin-right: 20px; /* Add right margin for spacing */
+            cursor: pointer;
+        }
+
+        .social-buttons img.telegram {
+            height: 45px; /* Smaller height for Telegram logo */
+            margin-left: 15px; /* Adjust left margin for better spacing */
+            margin-right: 15px; /* Adjust right margin for better spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>0xFfE37a8A8969e106FA60c78bF080FdEc2b5DE2A5
+        <button class="copy-btn" onclick="copyToClipboard()">Copy</button></h1>
+    </div>
+    <div class="social-buttons">
+        <a href="https://x.com/GarfieldBaseCat" target="_blank">
+            <img src="2fb909b74a854f0715e64dda5825990d-removebg-preview (1).png" alt="Twitter">
+        </a>
+        <a href="https://dex.com" target="_blank">
+            <img src="dexscreener-removebg-preview (2).png" alt="DEXScreener">
+        </a>
+        <a href="https://telegram.org" target="_blank">
+            <img class="telegram" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+        </a>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const value = '0xFfE37a8A8969e106FA60c78bF080FdEc2b5DE2A5';
+            navigator.clipboard.writeText(value).then(() => {
+                alert('Copied to clipboard: ' + value);
+            }).catch(err => {
+                console.error('Error copying to clipboard: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
